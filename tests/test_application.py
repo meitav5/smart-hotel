@@ -1,11 +1,11 @@
 import json
 import pytest
-from backend.application import application
+from backend.application import app
 
 
 @pytest.fixture
 def client():
-    return application.test_client()
+    return app.test_client()
 
 
 def test_response(client):
